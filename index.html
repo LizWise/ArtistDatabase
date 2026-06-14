@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>Welcome Back!</h2>
+    <h3>Columns in Artist Table</h3>
+    <ol>
+        <li>Autoincrement Index</li>
+        <li>Artist's Name</li>
+        <li>Twitter Following Integer</li>
+        <li>Instagram Following Integer</li>
+        <li>Keywords</li>
+        <li>Commerce and Portfolio Sites</li>
+        <li>Booth Photo Blob</li>
+        <li>Event Title</li>
+    </ol>
+    <form action="artists.php" method="POST">
+        <!-- Artist Name -->
+        <div>
+            <label for="aname" class="subtitle">Artist's Name</label>
+            <input type="text" id="aname" name="aname" placeholder="Illustrator-san">
+        </div>
+        <!-- Twitter -->
+        <div>
+            <label for="twitter" class="subtitle">Twitter Following</label>
+            <input type="number" id="twitter" name="twitter" min="0" step="1">
+        </div>
+        <!-- Instagram -->
+        <div>
+            <label for="instagram" class="subtitle">Instagram Following</label>
+            <input type="number" id="instagram" name="instagram" min="0" step="1">
+        </div>
+        <!-- Keywords -->
+        <label for="genre" class="subtitle">Genre Keywords</label>
+        <div class="fivecolumns">
+            <div>
+                <label>
+                    <input type="checkbox" name="anime" value="anime">
+                    Anime
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" name="anime-figures" value="anime figures">
+                    Anime Figures
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" name="antique" value="antique">
+                    Antique
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" name="bags" value="bags">
+                    Bags
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" name="bears" value="bears">
+                    Bears
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" name="cartoon-realism" value="cartoon-realism">
+                    Cartoon Realism
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" name="chibi" value="chibi">
+                    Chibi
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" name="colorful" value="colorful">
+                    Colorful
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" name="contemporary-fashion" value="contemporary fashion">
+                    Contemporary Fashion
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" name="cozy" value="cozy">
+                    Cozy
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" name="cyber" value="cyber">
+                    Cyber
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" name="editorial" value="editorial">
+                    Editorial
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" name="fashion" value="fashion">
+                    Fashion
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" name="food" value="food">
+                    Food
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" name="heisei" value="Heisei">
+                    Heisei
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" name="lolita" value="lolita">
+                    Lolita
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" name="manga" value="manga">
+                    Manga
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" name="neon" value="neon">
+                    Neon
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" name="offbeat" value="offbeat">
+                    Offbeat
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" name="original-character" value="original character">
+                    Original Character
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" name="original-style" value="original style">
+                    Original Style
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" name="paper-goods" value="paper goods">
+                    Paper Goods
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" name="pink" value="pink">
+                    Pink
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" name="polymer-sculpt" value="polymer sculpt">
+                    Polymer Sculpt
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" name="portraits" value="portraits">
+                    Portraits
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" name="sexy" value="sexy">
+                    Sexy
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" name="storybook" value="storybook">
+                    Storybook
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" name="sweets" value="sweets">
+                    Sweets
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" name="tea" value="tea">
+                    Tea
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" name="vintage-fashion" value="vintage fashion">
+                    Vintage Fashion
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" name="witchy" value="witchy">
+                    Witchy
+                </label>
+            </div>
+        </div>
+        <!--E-commerce-->
+        <label for="ecom" class="subtitle">E-commerce and Portfolio Sites</label>
+        <div class="fivecolumns">
+            <div>
+                <label>
+                    <input type="checkbox" name="ecom" value="base">
+                    BASE
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" name="ecom" value="booth">
+                    BOOTH
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" name="ecom" value="minne">
+                    Minne
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" name="ecom" value="pixiv">
+                    Pixiv
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" name="ecom" value="potofu">
+                    Potofu
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" name="ecom" value="skeb">
+                    Skeb
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" name="ecom" value="studiosite">
+                    Studio.Site
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" name="ecom" value="suzuri">
+                    Suzuri
+                </label>
+            </div>
+        </div>
+        <!--Mediums-->
+        <label for="mediums" class="subtitle">Artistic Mediums</label>
+        <div class="fivecolumns">
+            <div>
+                <label>
+                    <input type="checkbox" name="medium" value="acrylic paints">
+                    Acrylic Paints
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" name="medium" value="bags">
+                    Bags
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" name="medium" value="color pencils">
+                    Color Pencils
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" name="medium" value="digital">
+                    Digital
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" name="medium" value="figures">
+                    Figures
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" name="medium" value="gouache">
+                    Gouache
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" name="medium" value="ink">
+                    Ink
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" name="medium" value="oil paints">
+                    Oil Paints
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" name="medium" value="polymer clay">
+                    Polymer Clay
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" name="medium" value="traditional">
+                    Traditional
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" name="medium" value="watercolor">
+                    Watercolor
+                </label>
+            </div>
+
+        </div>
+
+    </form>
+
+    <button id="input">Enter Data</button>
+</body>
+
+</html>
